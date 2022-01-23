@@ -32,7 +32,7 @@ app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "frontend/build/index.html"));
 });
 
-console.log(process.env.PORT)
-app.listen(process.env.PORT, ()=>{
+console.log(process.env.port)
+app.listen(process.env.port, ()=>{
     console.log("server is on");
 });
